@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeknetic - AI Video Understanding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <button onclick="setLanguage('en')" class="lang-btn active">EN</button>
+                <button onclick="setLanguage('zh-tw')" class="lang-btn">繁</button>
+                <button onclick="setLanguage('zh-cn')" class="lang-btn">简</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1 class="company-name">Seeknetic</h1>
+                
+                <div class="content" data-lang="en">
+                    <p class="tagline">Empowering the Future of Video Intelligence</p>
+                    <p class="vision">Seeknetic gives AI the ability to see, hear, and reason about videos, helping you find content, uncover insights, analyze and remix, and automate your entire video workflow.</p>
+                </div>
+
+                <div class="content" data-lang="zh-tw" style="display: none;">
+                    <p class="tagline">賦能視頻智能的未來</p>
+                    <p class="vision">Seeknetic 賦予 AI 觀看、聆聽和推理視頻的能力，幫助您發現內容、洞察分析、重新混合，並自動化整個視頻工作流程。</p>
+                </div>
+
+                <div class="content" data-lang="zh-cn" style="display: none;">
+                    <p class="tagline">赋能视频智能的未来</p>
+                    <p class="vision">Seeknetic 赋予 AI 观看、聆听和推理视频的能力，帮助您发现内容、洞察分析、重新混合，并自动化整个视频工作流程。</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Seeknetic Limited. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

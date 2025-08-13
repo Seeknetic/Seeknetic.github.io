@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+    color: #1a1a1a;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.language-selector {
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #2c5f6b;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    color: #1a5a6a;
+    transform: translateY(-2px);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    background-color: rgba(128, 128, 128, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.hero {
+    max-width: 800px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.company-name {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #2c2c2c;
+    letter-spacing: -1px;
+    font-family: 'Mozilla Headline', serif;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    opacity: 0.85;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+}
+
+.vision {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #333333;
+}
+
+.content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .vision {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    header {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .lang-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
